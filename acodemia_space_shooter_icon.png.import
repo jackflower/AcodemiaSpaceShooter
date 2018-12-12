@@ -7,10 +7,10 @@ path="res://.import/acodemia_space_shooter_icon.png-391d0739eec89f732c686e50584f
 [deps]
 
 source_file="res://acodemia_space_shooter_icon.png"
-source_md5="b8c4e3e48fff5c24e9c9b5323c53b66e"
+source_md5="86932676c96d1e662b92473a4a280f0e"
 
 dest_files=[ "res://.import/acodemia_space_shooter_icon.png-391d0739eec89f732c686e50584f6ca1.stex" ]
-dest_md5="3b256b60daf94922cf865dc1a5143944"
+dest_md5="3e959df0ee1c4c0dd68a5be404573890"
 
 [params]
 
