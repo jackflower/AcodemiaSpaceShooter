@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://tileset/tilesheet.png" type="Texture" id=1]
+
+[node name="TileSetMaker" type="Node2D" index="0"]
+
+[node name="gravel" type="Sprite" parent="." index="0"]
+
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="ground" type="Sprite" parent="." index="1"]
+
+position = Vector2( 160, 32 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="sand" type="Sprite" parent="." index="2"]
+
+position = Vector2( 32, 160 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 64, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="stone" type="Sprite" parent="." index="3"]
+
+position = Vector2( 160, 160 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 64, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="wall_a" type="Sprite" parent="." index="4"]
+
+position = Vector2( 32, 288 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_a" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_a/StaticBody2D" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -32, -11, 32, -11, 32, 11, -32, 11 )
+
+[node name="wall_b" type="Sprite" parent="." index="5"]
+
+position = Vector2( 160, 288 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 128, 64, 64 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_b" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_b/StaticBody2D" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -11, -11, 32, -11, 32, 11, 11, 11, 11, 32, -11, 32 )
+
+

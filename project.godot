@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="AcodemiaSpaceShooter"
-run/main_scene="res://main.tscn"
+run/main_scene="res://levels/Level_a.tscn"
 config/icon="res://acodemia_space_shooter_icon.png"
 
 [input]

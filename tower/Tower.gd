@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-# 2018-12-08 acodemia.pl
+# 2019-01-05 acodemia.pl
 
 var health = 20
 var on_scene = false
@@ -107,5 +107,4 @@ func _on_VisibilityNotifier2D_screen_exited():
 func _on_VisibilityNotifier2D_screen_entered():
 	on_scene = true
 	pass
-	
 	

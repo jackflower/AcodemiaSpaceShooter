@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-# 2018-12-08 acodemia.pl
+# 2019-01-05 acodemia.pl
 
 var bullet_speed = 200
 var bullet_direction = Vector2(0, -1)

@@ -1,11 +1,9 @@
 extends Node2D
 
-# 2018-12-08
-#
+# 2019-01-05 acodemia.pl
 
 func _ready():
-	$Tower.setTarget($Raider)
-	#$Enemy.setTarget($Tower)
+	$Tower.setTarget($ShipEngine/Ship)
 	pass
 	
 	
@@ -15,4 +13,5 @@ func _ready():
 	
 #func _process(delta):
 #	pass
+	
 
