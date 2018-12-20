@@ -54,17 +54,23 @@ func _physics_process(delta):
 func createBullet():
 	
 	# tworzymy pocisk
-	var bullet = bullet_data.instance()
+	var bullet_left = bullet_data.instance()
+	var bullet_right = bullet_data.instance()
 	# ustawiamy pocisk na pozycji startowej
-	bullet.global_position= $BulletPosition2D.global_position
+	bullet_left.global_position= $BulletPosition2D_left.global_position
+	bullet_right.global_position= $BulletPosition2D_right.global_position
 	# ustawiamy skalę
-	bullet.global_scale = global_scale * created_bullet_scale_factor
+	bullet_left.global_scale = global_scale * created_bullet_scale_factor
+	bullet_right.global_scale = global_scale * created_bullet_scale_factor
 	# prędkość pocisku
-	bullet.bullet_speed = created_bullet_speed
+	bullet_left.bullet_speed = created_bullet_speed
+	bullet_right.bullet_speed = created_bullet_speed
 	# kaliber - siła rażenia
-	bullet.caliber = bullet_caliber
+	bullet_left.caliber = bullet_caliber
+	bullet_right.caliber = bullet_caliber
 	# dodajemy pocisk do sceny (względem root'a sceny - Level_a)
-	get_parent().get_parent().add_child(bullet)
+	get_parent().get_parent().add_child(bullet_left)
+	get_parent().get_parent().add_child(bullet_right)
 	
 	shooting = false
 	pass

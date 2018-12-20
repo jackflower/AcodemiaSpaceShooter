@@ -31,12 +31,6 @@ tile_data = PoolIntArray( -1310728, 0, 0, -1245192, 0, 0, -1310713, 0, 0, -11796
 
 [node name="ShipEngine" parent="." index="1" instance=ExtResource( 3 )]
 
-[node name="Ship" parent="ShipEngine" index="0"]
-
-created_bullet_scale_factor = 1
-created_bullet_speed = 400
-bullet_caliber = 2
-
 [node name="Tower" parent="." index="2" instance=ExtResource( 4 )]
 
 position = Vector2( -130.347, -441.498 )
