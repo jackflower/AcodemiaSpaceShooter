@@ -59,7 +59,7 @@ _sections_unfolded = [ "Transform" ]
 
 visible = false
 build_mode = 0
-polygon = PoolVector2Array( -32, -11, 32, -11, 32, 11, -32, 11 )
+polygon = PoolVector2Array( -31, -31, 31, -31, 31, 31, -31, 31 )
 
 [node name="wall_b" type="Sprite" parent="." index="5"]
 
@@ -84,6 +84,6 @@ _sections_unfolded = [ "Transform" ]
 
 visible = false
 build_mode = 0
-polygon = PoolVector2Array( -11, -11, 32, -11, 32, 11, 11, 11, 11, 32, -11, 32 )
+polygon = PoolVector2Array( -31, -31, 31, -31, 31, 31, -31, 31 )
 
 

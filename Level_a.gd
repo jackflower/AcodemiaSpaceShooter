@@ -3,7 +3,8 @@ extends Node2D
 # 2019-01-05 acodemia.pl
 
 func _ready():
-	$Tower.setTarget($ShipEngine/Ship)
+	$Tower_1.setTarget($ShipEngine/Ship)
+	$Tower_2.setTarget($ShipEngine/Ship)
 	pass
 	
 	

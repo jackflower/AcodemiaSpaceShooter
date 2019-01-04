@@ -3,6 +3,7 @@ extends KinematicBody2D
 # 2019-01-05 acodemia.pl
 
 var health = 100
+var collision_damage = 10
 var on_scene = false
 
 var motion_speed = 200
@@ -83,7 +84,7 @@ func _on_TimerShoot_timeout():
 	
 func update_health(damage):
 	health -= damage
-	print(health)
+	print("Health: " + String(health))
 	pass
 	
 	
@@ -96,6 +97,9 @@ func _on_VisibilityNotifier2D_screen_exited():
 	on_scene = false
 	pass
 	
-#func _process(delta):
-#	look_at(get_global_mouse_position())
+	
+func _on_Area2D_body_entered( body ):
+	#health -= collision_damage
+	update_health(collision_damage)
+	pass
 	

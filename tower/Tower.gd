@@ -100,7 +100,7 @@ func _on_TimerShoot_timeout():
 	
 func _on_VisibilityNotifier2D_screen_exited():
 	on_scene = false
-	queue_free()
+	#queue_free()
 	pass
 	
 	
